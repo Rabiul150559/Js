@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const computerGuess=parseInt((Math.random()*100)+1);
+        // document.write(computerGuess);
+        while(true){
+            let userGuess=prompt("Enter ur guess number");
+            if(computerGuess==userGuess){
+                document.write("Congratulation ur corect guess number")
+
+            }
+            else if(computerGuess<userGuess){
+                alert("U guess big number");
+
+            }
+            else if(computerGuess>userGuess){
+                alert("U guess small number");
+
+            }
+
+
+
+        }
+      
+
+
+    </script>
+
+</body>
+
+</html>
